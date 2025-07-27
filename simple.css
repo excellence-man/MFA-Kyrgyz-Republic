@@ -1,0 +1,235 @@
+ body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #222;
+  }
+  header {
+    position: relative;
+
+    background-color: transparent; /* no overlay or bg color */
+    background-image: url("anti-corr-aka.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll; /* or fixed if you prefer parallax */
+
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-top: 200px;
+    /* keep your existing styles */
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-shadow:
+      1px 1px 4px rgba(0,0,0,0.75),
+      0 0 6px rgba(0,0,0,0.5);
+  }
+
+
+
+  main {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px 40px 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 5px;
+  }
+  h1, h2, h3, h4 {
+    color: #004080;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 0.25rem;
+  }
+  p, li {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+  ul {
+    margin-left: 1.25em;
+  }
+  pre {
+    background: #eee;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+  nav {
+    background: #e0e7f3;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+  }
+  nav a {
+    color: #004080;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .section-content {
+    white-space: pre-wrap;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    font-size: 1rem;
+  }
+  thead {
+    background-color: #004080;
+    color: white;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+  }
+  tbody tr:hover {
+    background-color: #e0e7f3;
+  }
+
+
+  #image-carousel {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    user-select: none;
+  }
+  /* .carousel-image-wrapper {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 700px;
+  } */
+  .carousel-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 700px;
+  }
+  #image-caption {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #004080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 600;
+  }
+  .info-icon {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-style: normal;
+    cursor: default;
+    user-select: none;
+  }
+  .carousel-image-wrapper img {
+    max-width: 100%;
+    max-height: 400px;
+    transition: transform 0.3s ease;
+    cursor: grab;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 64, 128, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 12px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .carousel-btn:hover {
+    background-color: rgba(0, 64, 128, 0.9);
+  }
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  .carousel-btn.next {
+    right: 10px;
+  }
+  .carousel-controls {
+    margin-top: 10px;
+  }
+  .carousel-controls button {
+    background-color: #004080;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+  }
+  .carousel-controls button:hover {
+    background-color: #003366;
+  }
+
+  #conclusions blockquote {
+    background-color: #fffbe6;      /* Pale yellow background to highlight */
+    border-left: 6px solid #ffb300; /* Bold orange left border */
+    margin: 30px 0 0 0;
+    padding: 15px 20px;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #663300;
+    line-height: 1.5;
+    border-radius: 4px;
+  }
+
+  #conclusions blockquote mark {
+    background-color: #ffecb3;      /* Highlight color for <mark> */
+    color: #663300;
+    font-weight: 700;
+    padding: 0 4px;
+    border-radius: 2px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
