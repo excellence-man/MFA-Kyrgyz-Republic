@@ -23,7 +23,6 @@
 
   header h1 {
     margin-top: 200px;
-    /* keep your existing styles */
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 1.2;
@@ -31,8 +30,6 @@
       1px 1px 4px rgba(0,0,0,0.75),
       0 0 6px rgba(0,0,0,0.5);
   }
-
-
 
   main {
     margin: 20px auto;
@@ -123,12 +120,6 @@
     margin: 0 auto;
     user-select: none;
   }
-  /* .carousel-image-wrapper {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    max-height: 700px;
-  } */
   .carousel-image-wrapper {
     position: relative;
     overflow: hidden;
@@ -235,6 +226,7 @@
   }
 
 /* Responsive Styles */
+/* Devices up to 900px (ultra-small smartphones, iPhone SE...) */
 @media (max-width: 900px) {
   main {
     max-width: 96%;
@@ -269,7 +261,7 @@
   }
 }
 
-/* For very small screens (smartphones) */
+/* Devices up to 600px (ultra-small smartphones, iPhone SE...) */
 @media (max-width: 600px) {
   html {
     font-size: 15px;
@@ -337,3 +329,120 @@
   }
 }
 
+/* Devices up to 480px (normal smartphones and large 'mini' phones) */
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+  main {
+    padding: 0 2vw 18px 2vw;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+  }
+  header {
+    padding: 0.8rem 2vw;
+    min-height: 120px;
+    background-position: center top;
+  }
+  header h1 {
+    font-size: 1.15rem;
+    margin-top: 14vw;
+    line-height: 1.15;
+    padding: 0 1vw;
+    word-break: break-word;
+  }
+  nav {
+    padding: 6px 2vw;
+    font-size: 0.98rem;
+  }
+  nav a {
+    margin-right: 9px;
+    font-size: 0.98em;
+  }
+  .carousel-container {
+    max-width: 97vw;
+  }
+  .carousel-image-wrapper {
+    border-radius: 4px;
+    max-height: 120px;
+  }
+  .carousel-image-wrapper img {
+    max-height: 100px;
+  }
+  #image-caption {
+    font-size: 0.93rem;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  th, td {
+    padding: 6px 3px;
+  }
+  h1 {
+    font-size: 1.13rem;
+  }
+  h2 {
+    font-size: 0.94rem;
+    padding-bottom: 0.04rem;
+  }
+  #conclusions blockquote {
+    font-size: 0.96rem;
+    padding: 6px 6px;
+  }
+  footer {
+    font-size: 0.80rem;
+    padding: 0.5rem 2vw;
+  }
+}
+
+/* Devices up to 360px (small smartphones, many budget & some older flagships) */
+@media (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+  header h1 {
+    font-size: 0.96rem;
+    margin-top: 12vw;
+    padding: 0 1vw;
+  }
+  nav a, h1, h2, h3, h4, p, li {
+    font-size: 0.92em;
+  }
+  .carousel-image-wrapper img {
+    max-height: 78px;
+  }
+  table {
+    font-size: 0.83rem;
+  }
+}
+
+/* Devices up to 320px (ultra-small smartphones, iPhone SE...) */
+@media (max-width: 320px) {
+  html {
+    font-size: 13px;
+  }
+  nav a, h1, h2, h3, h4, p, li {
+    font-size: 0.89em;
+  }
+  header {
+    padding: 0.5rem 2px;
+    min-height: 88px;
+  }
+  header h1 {
+    font-size: 0.85rem;
+    margin-top: 7vw;
+  }
+  .carousel-image-wrapper img {
+    max-height: 62px;
+  }
+  table {
+    font-size: 0.77rem;
+  }
+  #image-caption {
+    font-size: 0.72rem;
+  }
+}
