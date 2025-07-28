@@ -1,3 +1,4 @@
 /*
   Cache-Control: max-age=3600
   X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://scripts.simpleanalyticscdn.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://queue.simpleanalyticscdn.com;
