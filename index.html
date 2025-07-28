@@ -26,6 +26,12 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self';" />
 <!-- Prevent MIME sniffing -->
 <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<!-- SW.js -->
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+</script>
 <!-- CSS/JS -->
 <link rel="stylesheet" href="simple.css" type="text/css" />
 <script src="year.js" defer></script>
