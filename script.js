@@ -4,8 +4,8 @@ if ('serviceWorker' in navigator) {
 }
 
 // Nav
-  // Simple smooth scroll for nav links
-  document.querySelectorAll('nav a').forEach(anchor => {
+// Simple smooth scroll for nav links
+document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
           e.preventDefault();
           const targetID = this.getAttribute('href').substring(1);
@@ -19,8 +19,28 @@ if ('serviceWorker' in navigator) {
       });
   });
 
-// Year
-document.addEventListener("DOMContentLoaded", function() {
-  const yearSpan = document.getElementById("currentYear");
-  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-});
+// Language select and Year in footer
+document.addEventListener('DOMContentLoaded', () => {
+    const langSelect = document.getElementById('lang-select');
+    
+    function switchLanguage(lang) {
+      const allLangElems = document.querySelectorAll('.lang-ru, .lang-en, .lang-de, .lang-es, .lang-fr');
+      allLangElems.forEach(el => {
+        if(el.classList.contains(`lang-${lang}`)) {
+          el.style.display = '';  // restore default display style
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+    // Initial language setup
+    switchLanguage(langSelect.value);
+
+    langSelect.addEventListener('change', () => {
+      switchLanguage(langSelect.value);
+    });
+
+    // Set current year if you want
+    const yearEl = document.getElementById('currentYear');
+    if(yearEl) yearEl.textContent = new Date().getFullYear();
+  });
