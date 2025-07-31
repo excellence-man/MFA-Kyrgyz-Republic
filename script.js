@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Year
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-    // const yearEl = document.getElementById('currentYear');
-    // if(yearEl) yearEl.textContent = new Date().getFullYear();
+    // document.getElementById("currentYear").textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('currentYear');
+    if(yearEl) yearEl.textContent = new Date().getFullYear();
   });
