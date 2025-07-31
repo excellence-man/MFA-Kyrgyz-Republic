@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
       switchLanguage(langSelect.value);
     });
 
-    // Set current year if you want
-    const yearEl = document.getElementById('currentYear');
-    if(yearEl) yearEl.textContent = new Date().getFullYear();
+    // Year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    // const yearEl = document.getElementById('currentYear');
+    // if(yearEl) yearEl.textContent = new Date().getFullYear();
   });
