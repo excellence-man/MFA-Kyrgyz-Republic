@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // }
 });
 
-const yearElem = document.getElementById("currentYear");
-if (yearElem) {
-  yearElem.textContent = new Date().getFullYear();
-}
+const yearElems = document.getElementsByClassName("currentYear");
+const currentYear = new Date().getFullYear();
+Array.from(yearElems).forEach(elem => {
+  elem.textContent = currentYear;
+});
