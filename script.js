@@ -69,8 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // current year
-  const yearElem = document.getElementById("currentYear");
-  if (yearElem) {
-    yearElem.textContent = new Date().getFullYear();
-  }
+  // const yearElem = document.getElementById("currentYear");
+  // if (yearElem) {
+  //   yearElem.textContent = new Date().getFullYear();
+  // }
 });
+
+const yearElem = document.getElementById("currentYear");
+if (yearElem) {
+  yearElem.textContent = new Date().getFullYear();
+}
