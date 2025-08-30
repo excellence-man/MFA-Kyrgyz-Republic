@@ -18,7 +18,6 @@
     padding: 1.5rem 2rem;
     text-align: center;
   }
-
   header h1 {
     margin-top: 200px;
     font-weight: 700;
@@ -244,7 +243,7 @@
   }
   header h1 {
     font-size: 2rem;
-    margin-top: 100px;
+    margin-top: 130px;
   }
   nav {
     padding: 8px 12px;
@@ -278,7 +277,7 @@
   }
   header h1 {
     font-size: 1.3rem;
-    margin-top: 32vw;
+    margin-top: 35vw;
     line-height: 1.15;
     word-break: break-word;
     padding: 0 2px;
@@ -345,7 +344,7 @@
   }
   header h1 {
     font-size: 1.15rem;
-    margin-top: 14vw;
+    margin-top: 17vw;
     line-height: 1.15;
     padding: 0 1vw;
     word-break: break-word;
@@ -403,7 +402,7 @@
   }
   header h1 {
     font-size: 0.96rem;
-    margin-top: 12vw;
+    margin-top: 15vw;
     padding: 0 1vw;
   }
   nav a, h1, h2, h3, h4, p, li {
@@ -430,7 +429,7 @@
   }
   header h1 {
     font-size: 0.85rem;
-    margin-top: 7vw;
+    margin-top: 9vw;
   }
   .carousel-image-wrapper img {
     max-height: 62px;
@@ -442,3 +441,4 @@
     font-size: 0.72rem;
   }
 }
+
