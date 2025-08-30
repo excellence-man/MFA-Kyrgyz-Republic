@@ -5,27 +5,38 @@
     padding: 0;
     background: #f9f9f9;
     color: #222;
-  }
-  header {
-    position: relative;
-    background-color: transparent; 
-    background-image: url("anti-corr-aka.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: scroll; 
-    color: white;
-    padding: 1.5rem 2rem;
-    text-align: center;
-  }
-  header h1 {
-    margin-top: 200px;
+ }
+ header {
+   height: 60vh;               /* proportional height */
+   min-height: 320px;          /* minimum height */
+   max-height: 600px;          /* maximum height */
+   display: flex;              /* flexbox centering */
+   flex-direction: column;
+   justify-content: center;    /* vertical center */
+   align-items: center;        /* horizontal center */
+   padding: 0 2rem;
+   text-align: center;
+   background-position: center center;
+   background-size: cover;
+   position: relative;
+   background-image: url("anti-corr-aka.png");
+   background-repeat: no-repeat;
+   background-color: transparent;
+   color: white;
+   background-attachment: scroll;
+ }  
+ header h1 {
+    margin: 0;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: clamp(1.3rem, 3vw, 2.5rem); /* responsive font size */    
     line-height: 1.2;
     text-shadow:
       1px 1px 4px rgba(0,0,0,0.75),
       0 0 6px rgba(0,0,0,0.5);
+    word-break: break-word;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 8px;
   }
   #language-selector {
     margin-top: 10px;
@@ -270,17 +281,16 @@
     padding: 0 4px 20px 4px;
     margin: 0;
   }
-  header {
-    padding: 1rem 4px;
+   {
+    height: 40vh;
+    min-height: 180px;
+    max-height: 280px;
     background-position: center top;
-    min-height: 160px;
   }
   header h1 {
-    font-size: 1.3rem;
-    margin-top: 35vw;
-    line-height: 1.15;
-    word-break: break-word;
-    padding: 0 2px;
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    max-width: 90%;
+    margin: 0; 
   }
   nav {
     font-size: 0.99rem;
@@ -344,7 +354,6 @@
   }
   header h1 {
     font-size: 1.15rem;
-    margin-top: 17vw;
     line-height: 1.15;
     padding: 0 1vw;
     word-break: break-word;
@@ -402,7 +411,6 @@
   }
   header h1 {
     font-size: 0.96rem;
-    margin-top: 15vw;
     padding: 0 1vw;
   }
   nav a, h1, h2, h3, h4, p, li {
@@ -424,14 +432,14 @@
     font-size: 0.89em;
   }
   header {
-    padding: 0.5rem 2px;
-    min-height: 88px;
+    height: 30vh;
+    min-height: 120px;
   }
   header h1 {
-    font-size: 0.85rem;
-    margin-top: 9vw;
-  }
-  .carousel-image-wrapper img {
+    font-size: clamp(0.8rem, 6vw, 1rem);
+    margin: 0;
+  }  
+ .carousel-image-wrapper img {
     max-height: 62px;
   }
   table {
@@ -441,4 +449,5 @@
     font-size: 0.72rem;
   }
 }
+
 
